@@ -1,0 +1,16 @@
+
+<h2> New Board </h2> 
+
+<%= simple_form_for @post , :url => board_posts_path, :html => { :class => "form-horizontal", :method => :post } do |f| -%>
+  <%= f.input :title , :input_html => { :class => "input-xxlarge"} %>
+  <%= f.input :content, :as => :text, :input_html => { :class => "input-xxlarge"} %>
+
+
+  <div class="form-actions">
+		<%= f.submit "Submit", :disable_with => 'Submiting...', :class => "btn" %>
+	</div>
+<% end -%>
+
+
+
+<%= simple_form_for @post , :url => board_post_path(@board,@post), :html => { :class => "form-horizontal", :method => :put} do |f| -%>

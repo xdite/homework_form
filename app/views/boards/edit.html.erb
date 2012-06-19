@@ -1,0 +1,9 @@
+
+<h2> New Board </h2> 
+
+<%= simple_form_for @board , :html => { :class => "form-horizontal" } do |f| -%>
+  <%= f.input :name %>
+  <div class="form-actions">
+		<%= f.submit "Submit", :disable_with => 'Submiting...' %>
+	</div>
+<% end -%>

@@ -1,0 +1,40 @@
+development:
+  adapter: mysql2
+  encoding: utf8
+  database: forum_development
+  host: localhost
+  username: root
+  password: ""
+
+test:
+  adapter: mysql2
+  encoding: utf8
+  database: buyble_development
+  host: localhost
+  username: root
+  password: "123456"
+  
+production:
+  adapter: mysql2
+  encoding: utf8
+  database: buyble_dproduction
+  host: buybleinstance.cpi7wkj9dglh.ap-northeast-1.rds.amazonaws.com
+
+  
+userdb:
+  adapter: mysql2
+  encoding: utf8
+  database: BuyTo
+  host: localhost
+  username: root
+  password: "123456"
+ 
+itemdb:  
+  adapter: mysql2
+  encoding: utf8
+  database: items_dev
+  host: localhost
+  username: root
+  password: "123456"
+  
+
